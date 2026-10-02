@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khoa Nguyen | Adjunct Business and Finance Faculty</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F8FA;--panel:#FFFFFF;--ink:#12263A;--muted:#4A5B6C;--line:#D5DDE5;--accent:#0B6E7A;--mark:#E6F0F2;
+--serif:"IBM Plex Serif",Georgia,serif;--sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1620;--panel:#142130;--ink:#E6EDF3;--muted:#9FB0C0;--line:#263646;--accent:#5CC0CC;--mark:#16303A}}
+:root[data-theme="dark"]{--bg:#0E1620;--panel:#142130;--ink:#E6EDF3;--muted:#9FB0C0;--line:#263646;--accent:#5CC0CC;--mark:#16303A}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+header.nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+header.nav .wrap{display:flex;gap:1.25rem;align-items:center;overflow-x:auto;white-space:nowrap;min-height:3rem}
+header.nav strong{font-family:var(--serif);margin-right:auto}
+header.nav a{color:var(--muted);text-decoration:none;font-size:.9rem}
+header.nav a:hover{color:var(--accent)}
+.hero{padding:4rem 0 3rem}
+h1{font:600 clamp(2.2rem,6vw,3.6rem)/1.1 var(--serif);margin:0 0 1rem;letter-spacing:-.01em}
+.lead{font:400 clamp(1.1rem,2.4vw,1.35rem)/1.5 var(--serif);max-width:40rem;margin:0 0 1.5rem}
+.contact{display:flex;flex-wrap:wrap;gap:.6rem}
+.contact a{border:1px solid var(--line);background:var(--panel);padding:.5rem .9rem;border-radius:4px;text-decoration:none;color:var(--ink);font-size:.92rem}
+.contact a.primary{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:600}
+.ledger{margin-top:2.5rem;display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);background:var(--panel)}
+.ledger>div{padding:1.25rem 1.4rem}
+.ledger>div+div{border-left:1px solid var(--line)}
+.ledger h2{font:600 1.05rem var(--serif);margin:0 0 .6rem;color:var(--accent)}
+.ledger ul{margin:0;padding-left:1.1rem}
+.ledger li{margin:.35rem 0}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2.s{font:600 1.7rem/1.2 var(--serif);margin:0 0 .5rem}
+.sub{color:var(--muted);max-width:40rem;margin:0 0 1.75rem}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.5rem}
+.cols h3{font:600 1.05rem var(--serif);margin:0 0 .4rem}
+.cols p{margin:0;color:var(--muted)}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:30rem;background:var(--panel)}
+th,td{text-align:left;padding:.7rem .9rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;font-size:.9rem;color:var(--muted)}
+td:first-child{font-weight:600;white-space:nowrap}
+.fourd{display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));gap:0;border:1px solid var(--line);background:var(--panel);margin:1.5rem 0}
+.fourd div{padding:1.1rem 1.2rem;border-right:1px solid var(--line)}
+.fourd div:last-child{border-right:0}
+.fourd b{display:block;font:600 1.15rem var(--serif);color:var(--accent);margin-bottom:.3rem}
+.fourd span{color:var(--muted);font-size:.95rem}
+.job{display:grid;grid-template-columns:11rem 1fr;gap:.5rem 2rem;padding:1.4rem 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.job .when{color:var(--muted);font-size:.92rem}
+.job h3{font:600 1.1rem var(--serif);margin:0}
+.job .org{color:var(--muted);margin:0 0 .5rem}
+.job ul{margin:0;padding-left:1.1rem}
+.job li{margin:.3rem 0}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1rem}
+.edu div{background:var(--panel);border:1px solid var(--line);padding:1rem 1.2rem}
+.edu b{display:block;font-family:var(--serif)}
+.edu span{color:var(--muted);font-size:.93rem}
+.mark{background:var(--mark);padding:1.25rem 1.4rem;border-left:4px solid var(--accent);max-width:44rem}
+footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);font-size:.92rem}
+@media(max-width:40rem){.ledger{grid-template-columns:1fr}.ledger>div+div{border-left:0;border-top:1px solid var(--line)}
+.job{grid-template-columns:1fr}.fourd div{border-right:0;border-bottom:1px solid var(--line)}.fourd div:last-child{border-bottom:0}.hero{padding-top:2.5rem}}
+@media print{header.nav{display:none}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<strong>Khoa Nguyen</strong>
+<a href="#teaching">Teaching</a><a href="#ai">AI fluency</a><a href="#practice">Practice</a><a href="#record">Record</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+<h1>Business and finance instruction built on real budgets, models, and deadlines.</h1>
+<p class="lead">Adjunct faculty candidate with three years of college teaching, a Master of Science in Finance, and six years of analyst work in municipal government, ports, and investment management.</p>
+<div class="contact">
+<a class="primary" href="mailto:nguyenk0176@uhcl.edu">Email Khoa</a>
+<a href="https://www.linkedin.com/in/khoatdnguyen">LinkedIn</a>
+<a href="tel:+12533944672">253-394-4672</a>
+</div>
+<div class="ledger">
+<div><h2>In the classroom</h2><ul>
+<li>Adjunct Faculty, San Jacinto College, since October 2023</li>
+<li>Four business courses taught, from principles to small business financing</li>
+<li>Original 4Ds framework for teaching AI fluency</li></ul></div>
+<div><h2>In practice</h2><ul>
+<li>Rate model for 39,000+ accounts supporting an $89M bond issuance</li>
+<li>$1.3B tax base error traced and a $10M funding gap closed</li>
+<li>$2M real estate and equity portfolio under management</li></ul></div>
+</div>
+</div>
+
+<section id="teaching">
+<h2 class="s">Teaching</h2>
+<p class="sub">Courses taught at San Jacinto College, South Campus, Houston, Texas.</p>
+<div class="scroll"><table>
+<thead><tr><th>Code</th><th>Course</th></tr></thead>
+<tbody>
+<tr><td>BUSI 1301</td><td>Business Principles</td></tr>
+<tr><td>BCIS 1305</td><td>Business Computer Applications</td></tr>
+<tr><td>BUSG 1341</td><td>Small Business Financing</td></tr>
+<tr><td>BMGT 1344</td><td>Negotiations and Conflict Management</td></tr>
+</tbody></table></div>
+<div class="cols" style="margin-top:2rem">
+<div><h3>Course design</h3><p>I design modules on budgeting, cash flow analysis, financial ratios, risk management, and dashboards for decision support.</p></div>
+<div><h3>Practitioner method</h3><p>Students work with the same tools I used on the job: Excel, Power BI, and SQL. Cases come from audit and municipal finance, such as a property tax base counted twice. The goal is a student who can read a financial statement, find the error, and defend a recommendation.</p></div>
+<div><h3>Ready to teach</h3><p>Financial Management, Corporate Finance, Investments, Financial Statement Analysis, Introduction to Accounting, and Business Analytics.</p></div>
+</div>
+</section>
+
+<section id="ai">
+<h2 class="s">AI fluency in the classroom</h2>
+<p class="sub">Since May 2026 I have led an AI fluency initiative built on a framework I developed, the 4Ds. Students learn to direct AI tools, check the output, and correct it while keeping their own judgment.</p>
+<div class="fourd">
+<div><b>Delegation</b><span>Decide which tasks to hand to AI and which to keep.</span></div>
+<div><b>Description</b><span>State the task, context, and standard clearly.</span></div>
+<div><b>Discernment</b><span>Evaluate the output for accuracy and fit.</span></div>
+<div><b>Due Diligence</b><span>Verify sources and own the final work.</span></div>
+</div>
+<p>I measure the initiative with anonymous student reflections and structured assignments. Results show higher student confidence in using AI and a clearer understanding of what it can and cannot do. I hold Anthropic Academy certificates in AI Fluency Framework and Foundations and AI Fluency for Educators.</p>
+</section>
+
+<section id="practice">
+<h2 class="s">Professional practice</h2>
+<p class="sub">Finance experience that supplies the cases, data, and standards used in class.</p>
+<div class="job"><div class="when">Mar 2023 to present</div><div>
+<h3>Investment and Financial Planning Analyst</h3><p class="org">Nice City Homes Investment, Houston, TX</p>
+<ul><li>Manage a $2 million portfolio across real estate and equities.</li>
+<li>Prepare monthly P&amp;L statements and performance reports, with profitability and variance analysis.</li>
+<li>Build forecasts and cash flow projections that guide capital allocation and risk decisions.</li></ul></div></div>
+<div class="job"><div class="when">Jul 2020 to Feb 2023</div><div>
+<h3>Financial Analyst</h3><p class="org">City of Pearland, TX</p>
+<ul><li>Developed the Water and Sewer Rate Model from 39,000+ accounts, supporting revenue sufficiency for an $89M municipal bond issuance.</li>
+<li>Traced a $10 million funding gap to its cause and resolved it by reducing expenses. The Brazoria County Tax Assessor-Collector had counted the Harris County portion of Pearland property values twice, which overstated taxable values by $1.3 billion. The city had adopted its budget and tax rate on that base, leaving a $4.7M gap in the general fund and $5.6M in debt service.</li>
+<li>Built Power BI dashboards for City Council and the public; automated reports with Power Query, DAX, MDX, SQL, and Excel.</li>
+<li>Tied Council strategic goals to KPIs and reporting frameworks.</li></ul></div></div>
+<div class="job"><div class="when">2017 to 2020</div><div>
+<h3>Earlier roles</h3><p class="org">Seattle University Graduate Student Council, Port of Seattle, Reframe It</p>
+<ul><li>As Vice Chair of Finance, cut reimbursement processing time by 50% and prevented over-budgeting by 20%.</li>
+<li>In internal audit at the Port of Seattle, flagged unallowable deductions, unreported revenue, and improper offsets. Also applied star schema design and variance analysis, and automated tasks with Excel VBA.</li>
+<li>Built a financial model for a zero-subsidy affordable housing initiative, recorded under GAAP.</li></ul></div></div>
+</section>
+
+<section id="record">
+<h2 class="s">Reliability record</h2>
+<p class="sub">Showing up, doing what was asked, and finishing on time.</p>
+<div class="mark">Between March 2023 and May 2025 I worked as an analyst, taught college courses, and completed an Associate of Applied Science in Engineering with a 4.0 GPA. I have held adjunct teaching duties continuously since October 2023.</div>
+<div class="cols" style="margin-top:1.75rem">
+<div><h3>Prepared</h3><p>Course modules built around current tools and real financial data.</p></div>
+<div><h3>Responsive</h3><p>Anonymous reflections and structured assignments give students a channel for feedback, and I adjust the course from it.</p></div>
+<div><h3>On schedule</h3><p>Reports, models, and dashboards delivered to Council deadlines and bond timelines.</p></div>
+</div>
+</section>
+
+<section id="education">
+<h2 class="s">Education and credentials</h2>
+<p class="sub">&nbsp;</p>
+<div class="edu">
+<div><b>Doctor of Education, Curriculum and Instruction</b><span>University of Houston, Clear Lake. 2026 to 2029, in progress. Research focus: AI fluency.</span></div>
+<div><b>Master of Science in Finance</b><span>Seattle University. 2018 to 2019. GPA 3.9.</span></div>
+<div><b>BA Business Administration, Finance and Accounting</b><span>Seattle University. Summa Cum Laude. GPA 3.9.</span></div>
+<div><b>Associate of Applied Science, Engineering</b><span>San Jacinto College. 2023 to 2025. GPA 4.0.</span></div>
+<div><b>Microsoft Power BI Data Analyst</b><span>Certification</span></div>
+<div><b>Anthropic Academy</b><span>AI Fluency Framework and Foundations; AI Fluency for Educators</span></div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="s">Contact</h2>
+<p class="sub">Pearland, Texas. Available for adjunct assignments in business and finance at community colleges and universities.</p>
+<div class="contact">
+<a class="primary" href="mailto:nguyenk0176@uhcl.edu">nguyenk0176@uhcl.edu</a>
+<a href="tel:+12533944672">253-394-4672</a>
+<a href="https://www.linkedin.com/in/khoatdnguyen">linkedin.com/in/khoatdnguyen</a>
+</div>
+</section>
+</main>
+<footer><div class="wrap">Khoa Nguyen. Adjunct business and finance faculty candidate.</div></footer>
+</body>
+</html>
